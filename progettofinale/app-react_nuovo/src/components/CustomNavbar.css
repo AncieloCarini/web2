@@ -1,0 +1,47 @@
+/* Navbar personalizzata */
+.custom-navbar {
+  background-color: #f1f1f1; /* Colore di sfondo chiaro */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombra leggera sotto la navbar */
+  position: sticky;
+  top: 0; /* Fissa la navbar in cima */
+  z-index: 1000; /* Assicurati che la navbar sia sopra al contenuto */
+  transition: background-color 0.3s ease;
+}
+
+/* Colore del brand (logo) */
+.navbar-brand {
+  color: #ff6f61 !important; /* Colore per il brand */
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+/* Colore e stile per i link della navbar */
+.navbar-link {
+  color: #333 !important; /* Colore grigio scuro per il testo dei link */
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+}
+
+/* Cambio colore del link quando hover */
+.navbar-link:hover {
+  color: #ff6f61 !important; /* Colore rosso per l'hover */
+  background-color: #f1f1f1; /* Colore di sfondo chiaro per hover */
+  border-radius: 5px; /* Angoli arrotondati per hover */
+}
+
+/* Navbar Collapse: gestisce il comportamento su schermi piccoli */
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar-toggler {
+  border-color: #ff6f61; /* Colore del bottone per il menu su schermi piccoli */
+}
+
+.navbar-toggler-icon {
+  background-color: #ff6f61; /* Colore dell'icona del menu */
+}
+  

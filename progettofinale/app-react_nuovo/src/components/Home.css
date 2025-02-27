@@ -1,0 +1,107 @@
+/* Background del container principale con l'immagine */
+.container-background {
+  background-image: url('../assets/15459.jpg');  /* Percorso dell'immagine nella cartella assets */
+  background-size: cover;  /* Copre tutto lo schermo */
+  background-position: center;  /* Centra l'immagine */
+  padding: 20px;
+  background-attachment: fixed;  /* Fissa l'immagine durante lo scroll */
+  background-color: rgba(0, 0, 0, 0.5);  /* Sovrapposizione semi-trasparente per migliorare la leggibilità */
+}
+
+/* Contenuto del container */
+.container-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Stile per il titolo principale della pagina (Home e About) */
+.page-home-about-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #ffffff;  /* Bianco per il testo sullo sfondo scuro */
+  margin-bottom: 30px;
+  background: none;  /* Rimuove il gradiente o qualsiasi sfondo */
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);  /* Aggiungi ombra per il contrasto */
+  padding: 10px 20px;
+  border-radius: 8px; /* Angoli arrotondati */
+  display: inline-block; /* Aggiunge uno stile a blocco */
+}
+
+/* Stile per ogni card */
+.home-card {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Ombra leggera per le card */
+  background-color: rgba(255, 255, 255, 0.9);  /* Card semi-trasparente per contrastare con l'immagine di sfondo */
+}
+
+/* Stile per il titolo di ogni card */
+.home-card .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #343a40;  /* Grigio scuro per il titolo delle card */
+  margin-bottom: 15px;
+}
+
+/* Stile per il testo all'interno della card */
+.home-card .card-text {
+  font-size: 1rem;
+  color: #6c757d;  /* Grigio medio per il testo */
+}
+
+/* Stile per la tabella delle assenze */
+.table {
+  margin-top: 20px;
+  font-size: 1rem;
+  background-color: #ffffff;  /* Sfondo bianco per la tabella */
+  border-radius: 5px;
+  border-collapse: collapse;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);  /* Ombra leggera per la tabella */
+}
+
+/* Stile per le intestazioni della tabella */
+.table th {
+  background-color: #6c757d;  /* Grigio scuro per le intestazioni */
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Stile per le celle della tabella */
+.table td {
+  text-align: center;
+  vertical-align: middle;
+  color: #495057;  /* Grigio scuro per il testo nelle celle */
+}
+
+/* Aggiunta di spaziatura tra le righe della tabella */
+.table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;  /* Grigio molto chiaro per le righe pari */
+}
+
+/* Hover su ogni riga della tabella per effetto visivo */
+.table tbody tr:hover {
+  background-color: #e9ecef;  /* Grigio chiaro per l'effetto hover */
+  cursor: pointer;
+}
+
+/* Ottimizzazione per i dispositivi mobili */
+@media (max-width: 768px) {
+  .page-home-about-title {
+    font-size: 2rem;
+  }
+
+  .home-card .card-title {
+    font-size: 1.25rem;
+  }
+
+  .home-card .card-text {
+    font-size: 0.9rem;
+  }
+
+  .table th,
+  .table td {
+    font-size: 0.9rem;
+  }
+}
